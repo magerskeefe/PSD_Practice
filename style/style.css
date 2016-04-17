@@ -1,0 +1,198 @@
+html {
+	position: relative; /*Allow for the footer to be position absolute and know where its starting point is*/
+	min-height: 100%; /*Uses the whole screen size for height so that the footer shows at the bottom*/
+}
+
+/*Header*/
+.paragraphs {
+	/*Generic font info*/
+	font-family: 'Lato', sans-serif; /*How do I determine this information in Gimp?*/
+	font-size: 14px;
+	color: #767c7e;
+	width: 1170px; /*Width of container so that site name sits in correct place. Container is inside header.*/
+	margin: 0 auto; /*Horizontally center the element within its container*/
+	margin-bottom: 265px; /*puts a margin at the bottom so the footer doesn't overlap with content*/
+	font-size: 16px;
+}
+
+.container {
+	width: 1170px; /*Width of container so that site name sits in correct place. Container is inside header.*/
+	margin: 0 auto; /*Horizontally center the element within its container*/
+}
+
+header {
+	background: #202628;
+	width: 100%; /*Set the width of the header*/
+	height: 80px; /*Set the height of the header*/
+}
+
+.logo {
+	float: left; /*Floats the site name left*/
+	padding-top: 30px;
+}
+
+.logo h1 {
+	/*Site name properties*/
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 25px;
+	color: #e7e7e7;
+	text-transform: uppercase;
+}
+
+.main-menu {
+	float: right; /*Floats the nav right*/
+}
+
+.main-menu li {
+	/*Nav list item properties*/
+	font-family: 'Fjalla One', sans-serif;
+	display: inline-block; /*Makes nav display horizontally*/
+	text-transform: uppercase;
+	padding-top: 33px;
+}
+
+.main-menu li a {
+	/*nav list item anchor properties*/
+	text-decoration: none; /*Removes the underline*/
+	color: #e7e7e7;
+	font-size: 14px;
+	padding: 33px 20px 28px 20px;
+}
+
+.main-menu li a:hover {
+	/*nav hover color*/
+	background: #e84c3d;
+}
+
+/*Footer*/
+footer {
+	height: 204px;
+	background: #202628;
+	position: absolute; /*Forces footer position to be in a specific place*/
+	bottom: 0;
+	width: 100%; /*Ensures screen takes up the whole width of the screen*/
+}
+
+.footer-menu {
+	float: left; /*Floats links to the left*/
+
+}
+
+.footer-menu li {
+	display: inline-block; /*Display list items horizontally*/
+	padding-top: 80px; /*Top padding*/
+	padding-bottom: 22px;
+	font-family: 'Lato', sans-serif; /*List Item font*/
+}
+
+.footer-menu li:first-child {
+	padding-left: 0; /*Do not add padding to the left of the first menu item*/
+}
+
+.footer-menu li:after {
+	content: "/"; /*Separate menu items with "/" */
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #6a7172;
+}
+
+.footer-menu li:last-child:after {
+	content: ""; /*Do not include "/" after last menu item*/
+
+}
+
+.footer-menu li a {
+	text-decoration: none; /*Removes the underline*/
+	color: #e7e7e7; /*Link color*/
+}
+
+.footer-menu li a:hover {
+	/*footer hover color*/
+	color: #e84c3d;
+}
+
+.p1 {
+	color: #e84c3d;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	display: inline;
+}
+
+.p2 {
+	color: #6a7172;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	display: inline;
+}
+
+.social {
+	float: right; /*Positions this div all the way to the right*/
+	padding-top: 80px;
+}
+
+.social li {
+	display: inline-block; /*Display items next to each other*/
+	padding-left: 10px; /*Puts a space in between each social item*/
+}
+
+.social li a {
+	/*Placing height and width on this instead of li makes the entire area clickable*/
+	color: #ffffff;
+	background-color: #e84c3d;
+	width: 43px; /*Height and width need to be the same to make it a circle*/
+	height: 43px; /*Height and width need to be the same to make it a circle*/
+	display: block;
+	border-radius: 50%; /*Make it a circle*/
+	position: relative;
+}
+
+.social li a:hover {
+	color: #e84c3d;
+	background-color: #ffffff;
+}
+
+.social li a i {
+	/*Places the font awesome socials exactly in the middle of each circle without having to calculate padding for each*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.hero {
+	background-image: url('../images/hero.jpg');
+	padding-top: 320px;
+	padding-bottom: 110px;
+}
+
+.hero h1 {
+	color: #e7e7e7;
+	font-size: 31px;
+	font-family: 'Fjalla One', sans-serif;
+	line-height: 47px;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+}
+
+.hero p {
+	color: #e7e7e7;
+	padding-top: 6px;
+}
+
+.hero a {
+	color: #e84c3d;
+	text-decoration: none;
+}
+
+.services .box {
+	display: inline-block;
+	width: 31%;
+	background-color: red;
+	margin-right: 30px;
+	color: black;
+	font-family: 'Lato', sans-serif;
+}
+
+.services .box:last-child {
+	margin-right: 0;
+}
